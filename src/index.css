@@ -13,6 +13,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --radius: 0.625rem;
+  --megaman: oklch(0.7535 0.139 232.66);
   --background: oklch(1 0 0);
   --foreground: oklch(0.3675 0.0319 255.72);
   --card: oklch(1 0 0);
@@ -51,6 +52,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-megaman: var(--megaman);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

@@ -10,9 +10,9 @@ export default function Layout({ showHeader = true }: LayoutProps) {
   return (
     <div className="min-h-dvh flex flex-col">
       {showHeader && (
-        <header className="h-24 border-b flex items-center">
+        <header className="h-24 border-b flex items-center justify-between px-8">
           <img src={Logo} alt="One Finance logo" className="h-20" />
-          <div className="mx-auto w-full max-w-7xl px-6 flex items-center justify-end gap-16">
+          <div className="w-full max-w-7xl flex items-center justify-end gap-16">
             <nav className="flex items-center gap-8">
               {menu.map(item => {
                 const processed = item.replace(" ", "-").toLocaleLowerCase()
