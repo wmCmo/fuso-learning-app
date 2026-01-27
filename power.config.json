@@ -1,0 +1,22 @@
+{
+  "appId": "",
+  "appDisplayName": "learning-app",
+  "description": null,
+  "environmentId": "ce03d75a-e4a3-e635-9d7d-91c9dcf08a47",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "logoPath": "Default",
+  "localAppUrl": "http://localhost:3000/",
+  "region": "prod",
+  "connectionReferences": {
+    "8834b6cf-c11c-4359-b7ca-fdf5f98ec747": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_office365users",
+      "displayName": "Office 365 Users",
+      "dataSources": [
+        "office365users"
+      ],
+      "dataSets": {}
+    }
+  },
+  "databaseReferences": {}
+}
