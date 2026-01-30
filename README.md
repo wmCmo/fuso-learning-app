@@ -82,3 +82,6 @@ The dev server prints a **Power Apps Local Play** URL. Open it in the same brows
 
 - The header avatar is rendered by `UserAvatar` (see `src/components/user-avatar.tsx`).
 - It uses Power Apps user context plus the generated `Office365UsersService` to fetch the signed-in user’s photo, and falls back to initials if unavailable.
+
+### Todo
+- [ ] After expanding the category, show the label of some courses with multiple links
