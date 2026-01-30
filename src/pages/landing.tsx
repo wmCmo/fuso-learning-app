@@ -1,3 +1,4 @@
+import LPGraph from "@/components/lp-graph";
 import { Link } from "react-router-dom";
 
 const LPSection = ({ swap, h1Pre, h1Suf, h2, p, highlight, imgSrc, imgAlt }: { swap: boolean, h1Pre: string, h1Suf: string, h2: string, p: string, highlight: string, imgSrc: string, imgAlt: string; }) => {
@@ -34,7 +35,7 @@ const LPTestimonials = ({ imgSrc, imgAlt, message, name }: { imgSrc: string, img
     );
 };
 
-const CoolButton = ({ to, txt }: { to: string, txt: string; }) => {
+export const CoolButton = ({ to, txt }: { to: string, txt: string; }) => {
     return (
         <Link to={to} className="inline-flex w-fit text-white bg-foreground px-4 py-2 rounded-sm drop-shadow-foreground shadow-xl hover:-translate-y-1 transition-transform duration-200 ease-in-out font-bold">{txt}</Link>
     );
@@ -43,7 +44,7 @@ const CoolButton = ({ to, txt }: { to: string, txt: string; }) => {
 const Landing = () => {
     return (
         <>
-            <main className="flex justify-between items-center h-2/5">
+            <main className="flex justify-between items-center h-1/5">
                 <div className="space-y-8">
                     <div className="text-7xl space-y-6 italic">
                         <h1>One team</h1>
@@ -79,6 +80,7 @@ const Landing = () => {
                     imgAlt="A person having a video call on their productive desk"
                 />
             </div>
+            <LPGraph />
             <section className="flex items-center justify-around mt-32">
                 <img src="/laurel.svg" alt="Laurel art" className="h-40" />
                 <div className="flex justify-center items-center gap-16">
@@ -103,7 +105,7 @@ const Landing = () => {
                 </div>
                 <img src="/laurel.svg" alt="Laurel art" className="h-40 scale-x-[-1]" />
             </section>
-            <section className="flex gap-8 mt-16">
+            <section className="flex gap-8 mt-24">
                 <LPTestimonials
                     imgSrc="https://api.dicebear.com/7.x/notionists/svg?seed=Zach"
                     imgAlt="Place holder avatar"

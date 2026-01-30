@@ -136,3 +136,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+.ripple-circle {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #38bdf8;
+  pointer-events: none;
+  animation: expandFade 1s forwards;
+}
+
+@keyframes expandFade {
+  to {
+    transform: scale(40);
+    opacity: 0;
+  }
+}
