@@ -1,7 +1,7 @@
 import ForceGraph2D, { type ForceGraphMethods, type LinkObject, type NodeObject } from 'react-force-graph-2d';
 import { forceX, forceY } from 'd3-force';
 import courseTags from '@/assets/json/courseTags';
-import { useCallback, useEffect, useMemo, useRef, useState, type Ref } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import courses from '@/assets/json/courses';
 
 type IdLike = LinkObject | string | number | undefined;
