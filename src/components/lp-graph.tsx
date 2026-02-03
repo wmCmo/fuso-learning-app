@@ -1,10 +1,8 @@
 import ForceGraph2D, { type ForceGraphMethods, type LinkObject, type NodeObject } from 'react-force-graph-2d';
 import { forceX, forceY } from 'd3-force';
 import courseTags from '@/assets/json/courseTags';
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, type Ref } from 'react';
 import courses from '@/assets/json/courses';
-// import { CoolButton } from '@/pages/landing';
-
 
 type IdLike = LinkObject | string | number | undefined;
 
@@ -130,7 +128,7 @@ export default function LPGraph() {
     }, [handleWheel]);
 
     return (
-        <section className='flex items-center gap-32 mt-32'>
+        <section className={`flex items-center gap-32 mt-32 transition-all duration-700 ease-in-out`}>
             <div ref={containerRef} className='overflow-hidden rounded-[128px] shadow-neutral-200 shadow-2xl relative'>
                 <ForceGraph2D
                     height={500}

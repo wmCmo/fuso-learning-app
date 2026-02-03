@@ -7,14 +7,17 @@ Designed for common app scenarios, easy extensibility, and minimal setup.
 ---
 
 ## Highlights
+
 - **⚡ Modern tooling** - Vite, Typescript, and React
 - **🎨 Out-of-box styling** - Tailwind, shadcn/ui components, and theming out of the box
 - **🔋 Batteries included** - Curated libraries pre-wired for common scenarios
 - **✅ Standard patterns** - Industry standard patterns and practices
 - **🤖 Agent friendly** - Optimized for use with coding agents
+
 ---
 
 ## 🗂 Pre-installed libraries
+
 - [Tailwind CSS](https://tailwindcss.com/) - utility-first CSS framework
 - [shadcn/ui](https://ui.shadcn.com/) - pre-installed UI components
 - [Lucide](https://lucide.dev/) - beautiful and consistent icons
@@ -51,12 +54,12 @@ Notes:
 
 ### 3) Add Office 365 Users connector (for avatars)
 
-1. In https://make.powerapps.com create (or reuse) an **Office 365 Users** connection.
+1. In [Power Apps](https://make.powerapps.com) create (or reuse) an **Office 365 Users** connection.
 2. Find its connection id:
 
-```powershell
-pac connection list
-```
+    ```powershell
+    pac connection list
+    ```
 
 3. Add it as a data source (this generates typed services under `src/generated/`):
 
@@ -84,4 +87,5 @@ The dev server prints a **Power Apps Local Play** URL. Open it in the same brows
 - It uses Power Apps user context plus the generated `Office365UsersService` to fetch the signed-in user’s photo, and falls back to initials if unavailable.
 
 ### Todo
+
 - [ ] After expanding the category, show the label of some courses with multiple links
