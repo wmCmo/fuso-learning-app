@@ -64,7 +64,7 @@ const Landing = () => {
                         <h1 className="font-black"><span className="text-megaman">One</span> Finance</h1>
                     </div>
                     <div className="flex items-center font-bold gap-6">
-                        <CoolButton to="/signin" txt="Start Now" />
+                        <CoolButton to="/choices" txt="Start Now" />
                         <p className="ml-3 text-foreground/50">Start your journey here</p>
                     </div>
                 </div>
@@ -150,7 +150,7 @@ const Landing = () => {
             <section className="flex justify-around items-center mt-32 ">
                 <div className="space-y-8">
                     <h1 className="text-5xl font-bold"><span className="text-megaman">Join Now.</span> For Free.</h1>
-                    <CoolButton to="/signin" txt="Register" />
+                    <CoolButton to="/choices" txt="Explore" />
                 </div>
                 <img src="/one-finance-logo.svg" alt="One Finance SVG Logo" className="" />
             </section>
